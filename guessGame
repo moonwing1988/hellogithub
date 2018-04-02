@@ -1,0 +1,21 @@
+##这是一个python猜数字游戏
+
+##插入 random module
+import random
+secret = random.randint(1,10)
+
+print('--------Welcome To Joey Guess Number Game---------')
+temp =  input("guess which number I think:")
+guess = int(temp)
+while guess != secret:
+        temp = input ("you are wrong, guess again:")
+        guess = int(temp)
+        if guess == secret:
+                print("wow! you are right!")
+                print("no Price")
+        else :
+                if guess > secret :
+                        print("your number is bigger!")
+                else :
+                        print("your number is smaller")
+print("game over!")
